@@ -5,7 +5,7 @@ import { infoCards } from "@/common/interfaces/overviewpage";
 const Index = (props:infoCards) => {
   const Icons = props.Icon
   return (
-    <div className={`rounded-xl p-4 h-[150px] w-[23%] shadow-lg flex items-center justify-start ${props.backgroundColor}`}>
+    <div className={`rounded-xl hover:scale-110 duration-300 p-4 h-[150px] w-[23%] shadow-lg flex items-center justify-start ${props.backgroundColor}`}>
       <div className={`${props.iconbg} w-[60px] h-[60px] rounded-[50%] flex items-center justify-center`}>
         <Icons className="w-[30px] text-white" />
       </div>

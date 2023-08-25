@@ -9,6 +9,10 @@ body {
   height: 100vh;
   color: #333;
 }
+::-webkit-scrollbar {
+  width: 0px;
+  }
+  
 
 .bg-trans{
   background-color: transparent !important;

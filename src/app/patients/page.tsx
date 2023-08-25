@@ -1,10 +1,9 @@
+import Patients from '@/page/patients'
 import React from 'react'
 
 const page = () => {
   return (
-    <div>
-      patients
-    </div>
+   <Patients />
   )
 }
 

@@ -15,11 +15,11 @@ export const menu = [
     link: "/patients",
     Icon: UserIcon,
   },
-  {
-    label: "schedule timings",
-    link: "/schedule",
-    Icon: ClockIcon,
-  },
+  // {
+  //   label: "schedule timings",
+  //   link: "/schedule",
+  //   Icon: ClockIcon,
+  // },
   {
     label: "payments",
     link: "/transactions",

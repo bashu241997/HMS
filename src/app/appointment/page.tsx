@@ -1,11 +1,9 @@
-import React from 'react'
+"use client"
+import Appointment from "@/page/appointments";
+import React from "react";
 
 const page = () => {
-  return (
-    <div>
-      appointment
-    </div>
-  )
-}
+  return <Appointment />;
+};
 
-export default page
+export default page;
