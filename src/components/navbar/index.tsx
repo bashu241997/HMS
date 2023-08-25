@@ -16,10 +16,10 @@ const Index = () => {
           <div className="py-[20px] flex uppercease items-senter justify-center">
             <Image
               src="/logo.png"
-              width={50}
-              height={50}
+              width={45}
+              height={45}
               alt="Picture of logo"
-            /><span className="font-extrabold px-3 text-[26px]">practo </span>
+            /><span className="font-extrabold px-3 text-[26px]">HMS +</span>
           </div>
           <ul className="space-y-2 cusrsor-pointer font-medium">
             {menu.map((_nav, i) => (
