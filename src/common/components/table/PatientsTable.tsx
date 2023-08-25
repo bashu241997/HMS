@@ -36,7 +36,7 @@ const PatientsTable = ({patients}: any) => {
           </thead>
           <tbody>
          {   patients.map((e:any,i:number) => {
-                return  <tr className="hover:scale-110 duration-300 text-[16px] bg-white cursor-pointer hover:bg-skyPrimary capitalize font-semibold">
+                return  <tr key={i} className="hover:scale-110 duration-300 text-[16px] bg-white cursor-pointer hover:bg-skyPrimary capitalize font-semibold">
                 <td className="w-4 p-4">
                   <div className="flex items-center">
                   <Bars3BottomLeftIcon width={25} />

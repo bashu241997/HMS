@@ -7,7 +7,7 @@ const DetailsCard = () => {
     <div>
       {data.map((e: any) => {
         return (
-          <div className="px-[20px] py-[10px] flex items-center justify-between">
+          <div key={e} className="px-[20px] py-[10px] flex items-center justify-between">
             <div className="flex items-center justify-start">
              <div className={`${
                   (e + 1) % 2 == 0 ? "bg-skyPrimary" : "bg-redPrimary"
