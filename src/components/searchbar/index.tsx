@@ -10,7 +10,7 @@ import Image from "next/image";
 const Index = () => {
   return (
     <div className="flex justify-between items-center bg-transparent">
-      <div className="flex w-full items-centerpx-3 bg-transparent">
+      <div className="hidden md:visible flex w-full items-centerpx-3 bg-transparent">
         <MagnifyingGlassCircleIcon className={"w-[40px] mx-3 text-black"} />
         <input
           placeholder="Search ... "
@@ -34,7 +34,7 @@ const Index = () => {
           />
           </div>
           <div className="mx-3 text-black min-w-[100px] capitalize font-bold">
-            <p className="text-sm">clian murphy</p>
+            <p className="text-sm">clian Johny</p>
             <p className="text-xs"> cardiologist</p>
           </div>
           <div>

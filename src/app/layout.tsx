@@ -28,9 +28,9 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Nav />
-        <div className="bg-background min-h-[100vh] p-4 sm:ml-72">
+        <div className="bg-background min-h-[100vh] p-4 md:ml-72">
           <div className="sm:container-lg md:mx-auto">
-          <div className="mx-4"><SearchBar /></div>
+          <div className="mx-4 z-[5] sticky"><SearchBar /></div>
           <div className="px-4">{children}</div>
           </div>
         </div>

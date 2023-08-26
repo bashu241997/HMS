@@ -1,26 +1,15 @@
 import React from "react";
 import { Doughnut } from "react-chartjs-2";
-import { Chart, ArcElement } from "chart.js";
-
+import { ArcElement } from "chart.js";
+import { Chart } from 'chart.js/auto'
 Chart.register(ArcElement);
-const data = {
-  labels: ["Male", "Female", "Child"],
-  datasets: [
-    {
-      data: [65, 59, 83],
-      backgroundColor: [
-        "#9287FE",
-        "#FFA901",
-        "#24A8FA",
-      ],
-    },
-  ],
-};
 
-const Doughnuts =  () => {
+const Doughnuts =  ({_data}:any) => {
+
+  
     return (
       <Doughnut
-        data={data}
+        data={_data}
         options={{
           maintainAspectRatio: false,
         }}
