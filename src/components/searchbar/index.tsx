@@ -10,7 +10,7 @@ import Image from "next/image";
 const Index = () => {
   return (
     <div className="flex justify-between items-center bg-transparent">
-      <div className="hidden md:visible flex w-full items-centerpx-3 bg-transparent">
+      <div className="flex w-full items-centerpx-3 bg-transparent">
         <MagnifyingGlassCircleIcon className={"w-[40px] mx-3 text-black"} />
         <input
           placeholder="Search ... "
@@ -27,7 +27,7 @@ const Index = () => {
         <div className="flex p-3 cursor-pointer hover:bg-primarygrey rounded-lg ltems-center">
           <div className="w-[40px] h-[40px]">
           <Image
-            src="/profile.png"
+            src="/17.png"
             width={40}
             height={40}
             alt="Picture of logo"

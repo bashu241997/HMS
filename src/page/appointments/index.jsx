@@ -2,13 +2,16 @@ import FullCalendar from "@fullcalendar/react";
 import daygridPlugin from "@fullcalendar/daygrid";
 import interactionPlugin from "@fullcalendar/interaction";
 import { useState } from "react";
-import { v4 as uuid } from "uuid";
+import { createPortal } from "react-dom";
+import AddEventModal from "@/common/components/Model/addeventModal";
+import Modal from "@/components/modal/modal";
 
- const Appointment = () => {
+const Appointment = () => {
   const [events, setEvents] = useState([]);
-  console.log(events)
+  const [isModal, setModal] = useState(false);
   const handleSelect = (info) => {
     const { start, end } = info;
+    setModal(true);
     const eventNamePrompt = prompt("Enter, event name");
     if (eventNamePrompt) {
       setEvents([
@@ -17,7 +20,6 @@ import { v4 as uuid } from "uuid";
           start,
           end,
           title: eventNamePrompt,
-          id: uuid(),
         },
       ]);
     }
@@ -32,23 +34,27 @@ import { v4 as uuid } from "uuid";
         events={events}
         select={handleSelect}
         headerToolbar={{
-          left: 'prev,next today',
-          center: 'title',
+          left: "prev,next today",
+          center: "title",
           end: "dayGridMonth dayGridWeek dayGridDay",
-        }} 
+        }}
         nowIndicator={true}
         resources={[
-          { id: 'a', title: 'Auditorium A' },
-          { id: 'b', title: 'Auditorium B', eventColor: 'green' },
-          { id: 'c', title: 'Auditorium C', eventColor: 'orange' },
+          { id: "a", title: "Auditorium A" },
+          { id: "b", title: "Auditorium B", eventColor: "green" },
+          { id: "c", title: "Auditorium C", eventColor: "orange" },
         ]}
         eventContent={(info) => <EventItem info={info} />}
-        plugins={[  
-          daygridPlugin,
-          interactionPlugin,
-          ]}
+        plugins={[daygridPlugin, interactionPlugin]}
         views={["dayGridMonth", "dayGridWeek", "dayGridDay"]}
       />
+      {/* {isModal &&
+        createPortal(
+          <Modal onclose={setModal(false)}>
+            <AddEventModal />
+          </Modal>,
+          document.getElementById("addeventModal")
+        )} */}
     </div>
   );
 };

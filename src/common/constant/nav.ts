@@ -1,4 +1,4 @@
-import { Cog8ToothIcon, DocumentTextIcon, EnvelopeIcon, CreditCardIcon, ClockIcon, UserIcon, CalendarIcon,Squares2X2Icon } from '@heroicons/react/24/solid'
+import { Cog8ToothIcon, DocumentTextIcon,InboxIcon,BellAlertIcon, EnvelopeIcon, CreditCardIcon, KeyIcon, UserIcon, CalendarIcon,Squares2X2Icon } from '@heroicons/react/24/solid'
 
 export const menu = [
   {
@@ -40,5 +40,26 @@ export const menu = [
     label: "settings",
     link: "/configuration",
     Icon: Cog8ToothIcon,
+  },
+];
+export const Settings = [
+  {
+    label: "my profile",
+    link: "/configuration/profile",
+    Icon: UserIcon,
+  },
+  {
+    label: "change password",
+    link: "/configuration/changepassword",
+    Icon: KeyIcon,
+  },{
+    label: "notifications",
+    link: "/configuration/alerts",
+    Icon: BellAlertIcon,
+  },
+  {
+    label: "review",
+    link: "/configuration/transactions",
+    Icon: InboxIcon,
   },
 ];

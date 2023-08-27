@@ -27,6 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <div id="addeventModal"></div>
         <Nav />
         <div className="bg-background min-h-[100vh] p-4 md:ml-72">
           <div className="sm:container-lg md:mx-auto">

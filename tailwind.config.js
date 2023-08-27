@@ -16,6 +16,8 @@ module.exports = {
     "bg-redMain",
     "bg-primary",
     "bg-primarygrey",
+    "bg-green-100",
+    " text-green-700",
     "bg-background",
     "bg-modelgrey",
     "bg-orangeSecondary",
@@ -43,7 +45,8 @@ module.exports = {
     "text-orangePrimary",
     "text-skyPrimary",
     "text-violetPrimary",
-    "text-redPrimary"
+    "text-redPrimary",
+    "border-transparent"
   ],
   theme: {
     extend: {
@@ -63,7 +66,7 @@ module.exports = {
       primary: "#7C7F84",
       primarygrey: "#EBEFF2",
       background: "#F9F9F9",
-      modelgrey: "#929398ad",
+      modelgrey: "#3d3d3de0",
       orangeSecondary: "#FFB72D",
       skySecondary: "#4BB8F9",
       violetSecondary: "#9287FE",

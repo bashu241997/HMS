@@ -7,6 +7,11 @@ const nextConfig = {
             destination: '/overview',
             permanent: true,
           },
+          {
+            source: '/configuration',
+            destination: '/configuration/profile',
+            permanent: true,
+          },
         ]
       },
 }
