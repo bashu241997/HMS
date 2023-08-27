@@ -9,7 +9,6 @@ import CardHeading from "@/common/components/Heading/CardHeading";
 
 import Doughnuts from "@/common/components/chart/doughnut";
 import { weekdata } from "@/common/utils/utility";
-import { AnyAaaaRecord } from "dns";
 const data = {
   labels: ["Male", "Female", "Child"],
   datasets: [

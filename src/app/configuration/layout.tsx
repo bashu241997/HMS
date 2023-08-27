@@ -15,12 +15,7 @@ export async function getServerSideProps(context: any) {
     redirect("/configuration/profile");
   }
 }
-export const metadata: Metadata = {
-  title: "HMS HUB :: settings",
-  icons: {
-    icon: "/icon.ico",
-  },
-};
+
 
 export default function RootLayout({
   children,
