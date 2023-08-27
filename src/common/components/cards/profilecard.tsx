@@ -26,7 +26,7 @@ const ProfileCard = () => {
         </div>
       </div>
       <div className="w-full px-6 pt-6 text-[12px] flex items-center justify-between text-center font-medium">
-        <p>people's trust</p>
+        <p>people&lsquo;s trust</p>
         <p>97</p>
       </div>
       <div className="w-full px-6 py-4 bg-neutral-200 dark:bg-neutral-600">
