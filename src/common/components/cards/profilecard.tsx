@@ -27,11 +27,11 @@ const ProfileCard = () => {
       </div>
       <div className="w-full px-6 pt-6 text-[12px] flex items-center justify-between text-center font-medium">
         <p>people's trust</p>
-        <p>97%</p>
+        <p>97</p>
       </div>
       <div className="w-full px-6 py-4 bg-neutral-200 dark:bg-neutral-600">
         <div className="bg-[#52b375] w-[97%] p-0.5 text-center text-xs font-medium leading-none text-white">
-          97%
+          97
         </div>
       </div>
     </div>
