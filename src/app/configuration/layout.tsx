@@ -10,12 +10,6 @@ interface menulinks {
   link?: any;
   Icon?: any;
 }
-export async function getServerSideProps(context: any) {
-  if (context.req) {
-    redirect("/configuration/profile");
-  }
-}
-
 
 export default function RootLayout({
   children,
