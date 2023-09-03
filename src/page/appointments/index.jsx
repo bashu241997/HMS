@@ -149,8 +149,8 @@ export default Appointment;
 const EventItem = ({ info }) => {
   const { event } = info;
   return (
-    <div className="p-3 w-full bg-grey-200 border-2 border-t-[5px] border-slate-500 ">
-      <p className="text-slate-500 font-bold capitalize">{event.title}</p>
+    <div className="p-2 text-[12px] w-full bg-grey-200 border-2 border-t-[5px] border-slate-500 ">
+      <p className="text-slate-500 font-bold capitalize">Name : {event.title}</p>
     </div>
   );
 };
