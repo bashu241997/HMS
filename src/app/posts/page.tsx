@@ -10,9 +10,10 @@ const page = () => {
         All the content is Updated and belong to harvard 
       </p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        {blogs.map((e: any) => {
+        {blogs.map((e: any,i:number) => {
           return (
             <a
+            key={i}
               href={e?.link}
               target="_blank"
               className="max-w-[320px] my-4 rounded overflow-hidden shadow-lg"
