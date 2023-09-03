@@ -1,7 +1,6 @@
-import CardHeading from "@/common/components/Heading/CardHeading";
+"use client"
 import { blogs } from "@/common/constant/blog";
 import React from "react";
-import Heading from "@/common/components/Heading/index";
 const page = () => {
   return (
     <div className="p-4">
