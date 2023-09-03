@@ -1,3 +1,4 @@
+"use client";
 import Payments from '@/page/payments/Payments'
 import React from 'react'
 

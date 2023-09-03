@@ -29,7 +29,7 @@ const ProfileCard = () => {
         <p>people&lsquo;s trust</p>
         <p>97</p>
       </div>
-      <div className="w-full px-6 py-4 bg-neutral-200 dark:bg-neutral-600">
+      <div className="w-full px-6 py-4 bg-neutral-200 ">
         <div className="bg-[#52b375] w-[97%] p-0.5 text-center text-xs font-medium leading-none text-white">
           97
         </div>

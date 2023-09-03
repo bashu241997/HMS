@@ -19,6 +19,11 @@ body {
   background-color: transparent !important;
 }
 
+button{
+  text-transform: capitalize !important;
+  font-weight: 600 !important;
+}
+
 @layer utilities {
   .paragraph {
     @apply text-[14px] ;

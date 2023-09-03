@@ -7,7 +7,7 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/page/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  safelist: [
+  safelist: [,
     "bg-white",
     "bg-black",
     "bg-orangeMain",

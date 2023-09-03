@@ -12,7 +12,7 @@ const paymntsMade = [
         "about": "Pariatur est officia sint ut quis quis do cupidatat minim id nulla et nostrud commodo. Exercitation nulla aliquip ullamco exercitation culpa in id irure reprehenderit tempor in.",
         "gender": "male",
         "mobile": "+91 10000000000",
-        "pic": "/1.png"
+        "pic": "/14.png"
       },
       "userId": "alissa311290",
       "payment": {
