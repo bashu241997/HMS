@@ -36,6 +36,50 @@ const cards:infoCards[] = [
         iconcolor:"white",
     }
 ]
+export const docchat = {
+  "conversation": [
+    {
+      "role": "doctor",
+      "message": "Hello! This is Dr. Smith. How can I help you today?"
+    },
+    {
+      "role": "patient",
+      "message": "Hi Dr. Smith, I've been experiencing a persistent headache for the past week, and I'm concerned about it."
+    },
+    {
+      "role": "doctor",
+      "message": "I'm sorry to hear that you're experiencing a headache. Can you please describe the nature of the headache? Is it throbbing or constant? Do you have any other symptoms?"
+    },
+    {
+      "role": "patient",
+      "message": "The headache is constant, and it's mostly on the right side of my head. I've also been feeling a bit dizzy at times."
+    },
+    {
+      "role": "doctor",
+      "message": "Thank you for sharing that information. It's important to understand your symptoms. Have you had any recent injuries or changes in your daily routine that might be contributing to the headache?"
+    },
+    {
+      "role": "patient",
+      "message": "I can't think of any recent injuries, but I've been under a lot of stress at work lately. Could stress be causing this headache?"
+    },
+    {
+      "role": "doctor",
+      "message": "Stress can certainly contribute to headaches. We'll explore that possibility. I recommend a physical examination to rule out any underlying issues. Can you come to the clinic for an appointment?"
+    },
+    {
+      "role": "patient",
+      "message": "Yes, I can come in for an appointment. What day and time works for you?"
+    },
+    {
+      "role": "doctor",
+      "message": "Great! I have availability on Monday at 2:00 PM. Does that work for you?"
+    },
+    {
+      "role": "patient",
+      "message": "Monday at 2:00 PM works for me. I'll see you then, Dr. Smith."
+    }
+  ]
+}
 
 const patients = [
   {
