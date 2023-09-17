@@ -5,9 +5,9 @@ import {
   MagnifyingGlassCircleIcon,
 } from "@heroicons/react/24/solid";
 import { profile } from "@/common/constant/profile";
-import Link from 'next/link'
+import Link from "next/link";
 
-const LeftMessagesBar = () => {
+const LeftMessagesBar = ({ onopen }: any) => {
   return (
     <div className="relative h-full shadow-lg">
       <div className="h-[155px] bg-">
@@ -33,7 +33,17 @@ const LeftMessagesBar = () => {
         {patients?.length > 0 &&
           patients?.map((e) => {
             return (
-              <Link key={e?.id} href={`/chat/${e?.id}`} className=" shadow-md mb-[1px] border-dotted p-4 capitalize cursor-pointer hover:bg-orangePrimary flex items-center bg-white">
+              <Link
+                onClick={(e) => {
+                  e.stopPropagation();
+                  if (onopen) {
+                    onopen(true);
+                  }
+                }}
+                key={e?.id}
+                href={`/chat/${e?.id}`}
+                className=" shadow-md mb-[1px] border-dotted p-4 capitalize cursor-pointer hover:bg-orangePrimary flex items-center bg-white"
+              >
                 <img src={e.profile.pic} className="w-[50px] rounded-full" />
                 <div className="pl-3 w-full">
                   <p className="text-[14px] font-semibold flex">
