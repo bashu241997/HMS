@@ -10,7 +10,7 @@ const Patientslist = ({ istoday }: any) => {
         return (
           <div
             key={e?.id}
-            className="cursor-pointer hover:bg-skyPrimary px-[20px] duration-300 hover:scale-110 py-3 flex items-center justify-between"
+            className="cursor-pointer hover:bg-skyPrimary px-[20px] duration-300 hover:scale-[1.05] py-3 flex items-center justify-between"
           >
             <div className="flex items-center justify-start">
               <img

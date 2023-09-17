@@ -15,10 +15,10 @@ const Blog = () => {
                 key={i}
                   href={e?.link}
                   target="_blank"
-                  className="max-w-[320px] my-4 rounded overflow-hidden shadow-lg"
+                  className="min-w-[320px] my-4 rounded overflow-hidden shadow-lg"
                 >
                   <img
-                    className="w-full h-52"
+                    className="w-full min-h-52"
                     src={e?.pic}
                     alt="Sunset in the mountains"
                   />

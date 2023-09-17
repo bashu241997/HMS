@@ -3,14 +3,14 @@ import { Bars3BottomLeftIcon} from "@heroicons/react/24/solid"
 
 const PatientsTable = ({patients}: any) => {
   return (
-    <section className="container mx-auto">
+    <section className="">
    
       <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
         <table className="w-full text-sm text-left text-gray-500">
           <thead className="text-[18px] capitalize text-gray-700 uppercase bg-gray-50 ">
             <tr>
               <th scope="col" className="p-4">
-                <div className="flex items-center">
+                <div className="hidden sm:block flex items-center">
                   <div className="w-[25px]" />
                 </div>
               </th>
@@ -36,9 +36,9 @@ const PatientsTable = ({patients}: any) => {
           </thead>
           <tbody>
          {   patients.map((e:any,i:number) => {
-                return  <tr key={i} className="hover:scale-110 duration-300 text-[16px] bg-white cursor-pointer hover:bg-skyPrimary capitalize font-semibold">
+                return  <tr key={i} className="hover:scale-[1.05] duration-300 text-[16px] bg-white cursor-pointer hover:bg-skyPrimary capitalize font-semibold">
                 <td className="w-4 p-4">
-                  <div className="flex items-center">
+                  <div className="hidden sm:block flex items-center">
                   <Bars3BottomLeftIcon width={25} />
                   </div>
                 </td>

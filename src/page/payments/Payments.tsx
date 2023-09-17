@@ -27,10 +27,9 @@ const Payments = () => {
   return (
     <div className="p-4">
       <CardHeading leftlabel={"Payment methods"} />
-      <div className="flex items-center py-[15px] justify-start">
+      <div className="flex flex-col sm:flex-row items-center py-[15px] justify-start">
         {img.map((e) => (
-          <div key={e} className="px-[15px]">
-            {" "}
+          <div key={e} className="sm:px-[15px] mx-2 my-4  sm:m-0">
             <Creditcard bgimg={e} />
           </div>
         ))}
@@ -38,7 +37,7 @@ const Payments = () => {
       </div>
       <CardHeading leftlabel={"payments"} />
       <div className="grid gap-6 grid-cols-12">
-        <div className="bg-white max-h-[75vh] overflow-y-auto shadow-2xl mt-4 col-span-9">
+        <div className="bg-white max-h-[75vh] overflow-y-auto shadow-2xl mt-4 col-span-12 sm:col-span-9">
           <table className=" w-full text-sm text-left text-gray-500">
             <thead className="text-[16px] bg-violetMain text-white capitalize text-gray-700 uppercase py-4 bg-gray-50">
               <tr>
@@ -81,7 +80,7 @@ const Payments = () => {
             </tbody>
           </table>
         </div>
-        <div className="col-span-3 mt-4">
+        <div className="col-span-12 sm:col-span-3 mt-4">
           <div className="bg-orangeMain text-white min-h-[45vh] rounded-[10px] px-4 mb-4 shadow-2xl">
             <OrderCard order={Show.data}/>
           </div>

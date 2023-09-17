@@ -2,7 +2,7 @@ import React from "react";
 
 const Creditcard = ({bgimg}:any) => {
   return (
-    <div className="w-96 h-52 bg-red-100 rounded-xl relative text-white shadow-2xl transition-transform transform hover:scale-110">
+    <div className="sm:w-96 h-52 bg-red-100 rounded-xl relative text-white shadow-2xl transition-transform transform hover:scale-[1.05]">
       <img
         className="relative object-cover w-full h-full rounded-xl"
         src={bgimg}

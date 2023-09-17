@@ -29,7 +29,7 @@ const PatientsType = {
 };
 const Index = () => {
   return (
-    <div className="p-4">
+    <div className="sm:p-4">
       <Heading
         title={"clian Murphy"}
         subheading="Good Morning, Have nice day at work"
@@ -67,7 +67,7 @@ const Index = () => {
           <div className="bg-white rounded-[10px] py-4 h-[300px] overflow-y-auto  shadow- xl ">
             <Patientslist istoday={true} />
           </div>
-          <div className="px-3 bg-white">
+          <div className="sm:px-3 bg-white">
             <p className="py-2 text-[16px] capitalize font-bold text-violetMain">{weekdata()[1]}</p>
             <div className="flex justify-between items-center">
               {weekdata()[0]?.map((e: any,i:number) => {
