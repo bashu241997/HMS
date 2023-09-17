@@ -32,8 +32,8 @@ const MessageContainer = ({ param }: any) => {
         </div>
       </div>
 
-      <div className="bg-skyPrimary relative h-[75vh] overflow-y-scroll">
-        <div className="overflow-y-scroll h-[65vh]">
+      <div className="bg-skyPrimary relative h-[65vh] sm:h-[75vh] overflow-y-scroll">
+        <div className="overflow-y-scroll h-[55vh] sm:h-[65vh]">
           {docchat.conversation.map((e, i) => {
             return (
               <>

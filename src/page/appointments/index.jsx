@@ -111,7 +111,7 @@ const Appointment = () => {
   };
 
   return (
-    <div>
+    <div className="mt-6">
       <FullCalendar
         editable
         selectable

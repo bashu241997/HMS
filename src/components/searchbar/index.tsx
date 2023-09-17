@@ -9,8 +9,8 @@ import Image from "next/image";
 
 const Index = () => {
   return (
-    <div className="bg-background shadow-lg sm:shadow-0 flex flex-col mt-[60px] sm:mt-0 sm:flex-row justify-between items-center sm:bg-transparent">
-      <div className="hidden sm:flex w-full items-center justify-between sm:px-3 bg-transparent">
+    <div className=" top-0 flex flex-col sm:flex-row justify-between items-center">
+      <div className="hidden sm:flex w-full items-center justify-between sm:px-3 ">
         <MagnifyingGlassCircleIcon
           className={"w-[30px] sm:w-[40px] mr-2 sm:mx-3 text-black"}
         />
@@ -19,7 +19,7 @@ const Index = () => {
           className={"w-full p-3 outline-none bg-trans "}
         />
       </div>
-      <div className="fixed top-0 sm:relative  flex ltems-center justify-between">
+      <div className="fixed bg-background w-full sm:w-auto sm:relative  flex ltems-center justify-between">
         <button className="hidden sm:block hover:scale-[1.05] duration-300 cursor-pointer">
           <QuestionMarkCircleIcon
             className={"w-[25px] sm:w-[40px] mx-3 text-black "}

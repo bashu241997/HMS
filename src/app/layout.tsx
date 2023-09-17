@@ -21,14 +21,14 @@ export default function RootLayout({
         <div id="addeventModal"></div>
         <div className="">
           <Nav sho={show} close={setShow} />
-          <>{show ?  <XMarkIcon onClick={()=>setShow(false)} className="fixed right-0 w-[30px] z-10 m-3 sm:hidden" />  : <Bars4Icon onClick={()=>setShow(true)} className="fixed right-0 w-[30px] z-10 m-3 sm:hidden" />}</>
+          <>{show ?  <XMarkIcon onClick={()=>setShow(false)} className="fixed right-0 w-[30px] z-50 m-3 sm:hidden" />  : <Bars4Icon onClick={()=>setShow(true)} className="fixed right-0 w-[30px] z-50 m-3 sm:hidden" />}</>
         </div>
-        <div className="bg-background min-h-[100vh] px-4 sm:p-4 overflow-x-hidden sm:overflow-x-auto md:ml-72">
+        <div className="bg-background min-h-[100vh]  sm:p-4 overflow-x-hidden sm:overflow-x-auto md:ml-72">
           <div className="">
-            <div className="mx-4 z-[5] sticky">
+            <div className="sm:mx-4">
               <SearchBar />
             </div>
-            <div className="sm:px-4">{children}</div>
+            <div className="mt-[80px] sm:mt-0 px-4 sm:px-4">{children}</div>
           </div>
         </div>
       </body>
