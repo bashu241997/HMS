@@ -37,7 +37,7 @@ export default function RootLayout({
                 <span className="pr-1">
                   <Icon className={"w-[20px]"} />
                 </span>
-                <span>{e.label}</span>
+                <span className=" min-w-[100px] max-w-[250px]">{e.label}</span>
               </Link>
             );
           })}
